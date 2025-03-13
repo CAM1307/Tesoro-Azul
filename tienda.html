@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tesoro Azul - Venta de Larimar, la piedra azul del Caribe. Descubre nuestra colección de collares, pulseras y anillos de Larimar.">
+    <meta name="keywords" content="Larimar, joyería, collares, pulseras, anillos, piedra azul, Caribe">
+    <meta name="author" content="Tesoro Azul">
+    <title>Tesoro Azul - Venta de Larimar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="tienda.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Tesoro Azul</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="carrito-btn">
+                            <i class="fas fa-shopping-cart"></i> 
+                            <span class="badge bg-danger rounded-pill" id="carrito-contador">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="login-btn">Iniciar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section bg-light py-5">
+        <div class="container text-center">
+            <h1 class="display-4">Bienvenido a Tesoro Azul</h1>
+            <p class="lead">Descubre la belleza única del Larimar, la piedra azul del Caribe.</p>
+            <a href="#productos" class="btn btn-primary btn-lg">Ver Productos</a>
+        </div>
+    </header>
+
+    <!-- Productos Section -->
+    <section id="productos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nuestros Productos</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="51PBqi6EtJL.webp" class="card-img-top" alt="Collar de Larimar">
+                        <div class="card-body">
+                            <h5 class="card-title">Collar de Larimar</h5>
+                            <p class="card-text">Collar artesanal hecho con piedra de Larimar auténtica.</p>
+                            <p class="card-text precio">$29.99</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="45.webp" class="card-img-top" alt="Pulsera de Larimar">
+                        <div class="card-body">
+                            <h5 class="card-title">Pulsera de Larimar</h5>
+                            <p class="card-text">Pulsera elegante con detalles en plata y Larimar.</p>
+                            <p class="card-text precio">$19.99</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="40NPIEDRA17.5.webp" class="card-img-top" alt="Anillo de Larimar">
+                        <div class="card-body">
+                            <h5 class="card-title">Anillo de Larimar</h5>
+                            <p class="card-text">Anillo único con un hermoso corte de Larimar.</p>
+                            <p class="card-text precio">$24.99</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contacto</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <form id="form-contacto">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-2">CEO: Ricky Martinez, Carlos Martinez</p>
+            <p>
+                <a href="privacidad.html" class="text-white me-3">Política de Privacidad</a>
+                <a href="terminos.html" class="text-white">Términos de Servicio</a>
+            </p>
+            <p>
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Modales -->
+    <div id="carrito-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Tu Carrito</h2>
+            <ul id="lista-carrito"></ul>
+            <p>Total: <span id="total-carrito">$0.00</span></p>
+            <button id="pagar" class="btn btn-success">Pagar</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"></script>
+    <!-- Stripe -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <!-- Custom JS -->
+    <script src="tienda.js"></script>
+</body>
+</html>
